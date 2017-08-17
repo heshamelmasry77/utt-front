@@ -3,32 +3,9 @@
         <div class="col-md-3"><img src="/assets/img/logo.svg"></div>
         <div class="col-md-6"><h2 class="performance-header">MONTHLY PERFORMANCE REPORT</h2></div>
         <div class="col-md-3 custom-filter-date">
-
-
-            <div class="form-group">
-                <label>Max date to be selected is <code>{{dashboard.momentDate}}</code></label>
-                <input class="form-control"
-                       placeholder="Select a date..."
-                       moment-picker="dashboard.stringDate"
-                       locale="en"
-                       format="YYYY-MM"
-                       min-view="decade"
-                       max-view="year"
-                       min-date="dashboard.minDateMoment"
-                       max-date="dashboard.maxDateMoment"
-                       start-view="decade"
-                       autoclose="dashboard.autoclose"
-                       today="true"
-                       ng-model="dashboard.momentDate"
-                       ng-model-options="{ updateOn: 'blur' }">
-
-
-            </div>
-            {{dashboard.momentDate}}
-
-
-
-
+            <select class="form-control selectpicker show-tick" title="Select period" selectpicker
+                    ng-model="dashboard.selectedPr" ng-options="item.date for item in dashboard.prData">
+            </select>
         </div>
     </div>
 
@@ -202,6 +179,3 @@
     </div>
 
 </div>
-
-{{dashboard.googleData}}
-

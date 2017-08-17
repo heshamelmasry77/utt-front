@@ -10,42 +10,14 @@
         .controller('DashboardController', DashboardController);
 
     /** @ngInject */
-    function DashboardController(DashboardApiService) {
+    function DashboardController() {
 
         var vm = this;
         vm.prData = {};
         vm.init = init;
-        vm.googleData = {};
-        vm.pipdriveData = {};
-        vm.momentDate = {};
-
-        vm.minDateMoment = moment().subtract(6, 'month');
-        vm.maxDateMoment = moment().add(1, 'month');
-        vm.momentDate = vm.maxDateMoment.format('YYYY-MM');
-
-        function getYearMonth() {
-            var dateArray = vm.momentDate.split("-");
-            vm.year = dateArray[0];
-            vm.month = dateArray[1];
-
-
-        }
 
         function init() {
-            DashboardApiService.getGoogleInfo().then(function (data) {
-                vm.googleData = data;
-            }).catch(function (e) {
-                // handle errors in processing or in error.
-                console.log("An error happened googleinfo");
-            });
-
-            DashboardApiService.getPipeInfo(vm.year, vm.month).then(function (data) {
-                vm.pipdriveData = data;
-            }).catch(function (e) {
-                // handle errors in processing or in error.
-                console.log("An error happened pipedrive");
-            });
-
+            //todo get performance report data here from server
             vm.prData = [
                 {
                     ID: '12312dsd',
@@ -98,9 +70,8 @@
                     acquisitions: '213'
                 }
             ];
+            vm.selectedPr = vm.prData[0];
+
         }
-
-        getYearMonth();
-
     }
 })();
