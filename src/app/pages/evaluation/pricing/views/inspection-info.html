@@ -1,0 +1,123 @@
+<div ng-init="inspection.init()">
+    <h1>Hello i am inspection page with id #{{inspection.inspectionData.id}}
+        <a ui-sref="evaluation.pricing.list" class="pull-right"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</a>
+    </h1>
+
+    <div class="col-md-12">
+        <div ba-panel ba-panel-title="Inspection Info" ba-panel-class="with-scroll">
+            <div class="horizontal-scroll">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th colspan="2" width="50%" class="text-center"><strong>Info</strong></th>
+                        <th colspan="2" width="50%" class="text-center"><strong>User Info</strong></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Id</td>
+                        <td>{{inspection.inspectionData.id}}</td>
+                        <td>Name</td>
+                        <td>{{inspection.inspectionData.userName}}</td>
+                    </tr>
+                    <tr>
+                        <td>Inspection Date</td>
+                        <td>{{inspection.inspectionData.inspectionDate}}</td>
+                        <td>Email</td>
+                        <td>{{inspection.inspectionData.userMail}}</td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td>{{inspection.inspectionData.status}}</td>
+                        <td>Phone</td>
+                        <td>{{inspection.inspectionData.userPhone}}</td>
+                    </tr>
+                    <tr>
+                        <td>Region</td>
+                        <td>{{inspection.inspectionData.region}}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="text-center"><strong>Car Info</strong></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Year</td>
+                        <td>{{inspection.inspectionData.year}}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Make</td>
+                        <td>{{inspection.inspectionData.make}}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Model</td>
+                        <td>{{inspection.inspectionData.model}}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Transmission</td>
+                        <td>{{inspection.inspectionData.transmission}}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Fuel Type</td>
+                        <td>{{inspection.inspectionData.fuelType}}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Variant</td>
+                        <td>{{inspection.inspectionData.variant}}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mileage</td>
+                        <td>{{inspection.inspectionData.mileage}}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Car Condition</td>
+                        <td>{{inspection.inspectionData.carCondition}}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="text-center"><strong>Offer Info</strong></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Trade Price</td>
+                        <td>{{inspection.inspectionData.tradePrice}}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Offer</td>
+                        <td><i class="fa fa-2" ng-class="inspection.inspectionData.offer ? 'fa-check text-success' : 'fa-close text-danger'" aria-hidden="true"></i></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Manual</td>
+                        <td><i class="fa fa-2" ng-class="inspection.inspectionData.manual ? 'fa-check text-success' : 'fa-close text-danger'" aria-hidden="true"></i></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>

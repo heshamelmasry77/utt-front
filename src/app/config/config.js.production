@@ -1,0 +1,14 @@
+angular
+  .module('CarZarConfig', [])
+  .provider('Config', function () {
+    return {
+      pricingApiDomain: 'https://cz4-pricing-production.herokuapp.com',
+      bookingApiDomain: 'https://cz4-booking-production.herokuapp.com',
+      opsApiDomain: 'https://ms-ops-api.herokuapp.com',
+      isDebug: false,
+      showExamples: false,
+      $get: function () {
+        return this;
+      }
+    }
+  });

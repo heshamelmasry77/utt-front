@@ -1,0 +1,9 @@
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+  color: #555;
+  background-color: #e4e4e4;
+}
+
+label.custom-checkbox > input:disabled + span, label.custom-radio > input:disabled + span {
+  color: #1c2b36;
+
+}

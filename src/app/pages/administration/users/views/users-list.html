@@ -1,0 +1,103 @@
+<div class="widgets">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div ba-panel ba-panel-title="User List"
+                 ba-panel-class="with-scroll"
+                 ng-init="usersList.init()">
+
+                <div class="add-row-editable-table">
+                    <a ui-sref="administration.users.user-form" class="btn btn-primary">Create User</a>
+                </div>
+                <div class="horizontal-scroll">
+                    <div class="form-group select-page-size-wrap ">
+                        <label>Rows on page
+                            <select class="form-control selectpicker show-tick" title="Rows on page" selectpicker
+                                    ng-model="usersList.smartTablePageSize"
+                                    ng-options="i for i in usersList.numberOfrows">
+                            </select>
+                        </label>
+                    </div>
+                    <table class="table  table-hover " st-table="usersList.smartTableData">
+                        <thead>
+                        <tr class="sortable ">
+                            <th class="table-id" st-sort="id" st-sort-default="true">#</th>
+                            <th st-sort="firstName">First Name</th>
+                            <th st-sort="lastName">Last Name</th>
+                            <th st-sort="email">Email</th>
+                            <th st-sort="role">Role</th>
+                            <th st-sort="createdDate">Created Date</th>
+                            <th></th>
+                        </tr>
+                        <tr class="editable-row">
+                            <th></th>
+                            <th><input st-search="firstName" placeholder="Search First Name"
+                                       class="input-sm form-control search-input"
+                                       type="search"/></th>
+                            <th><input st-search="lastName" placeholder="Search Last Name"
+                                       class="input-sm form-control search-input"
+                                       type="search"/></th>
+
+                            <th><input st-search="email" placeholder="Search Email"
+                                       class="input-sm form-control search-input"
+                                       type="search"/>
+                            </th>
+                            <th>
+
+                                <select st-search="role" class="show-tick form-control dropdown_custom_list">
+                                    <option value="">- select a role -</option>
+                                    <option ng-repeat="role in usersList.roles" value="{{role}}">{{role}}</option>
+                                </select>
+
+
+                            </th>
+
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="item in usersList.smartTableData">
+                            <td class="table-id">{{item.id}}</td>
+                            <td>{{item.firstName || 'empty'}}</td>
+                            <td>{{item.lastName || 'empty'}}</td>
+                            <td e-name="email" e-form="rowform" e-required><a
+                                    class="email-link"
+                                    ng-href="mailto:{{item.email}}">{{item.email
+                                || 'empty'}}</a></td>
+                            <td>{{item.role || 'empty'}}</td>
+                            <td>{{item.createdDate || 'empty'}}</td>
+                            <td>
+
+                                <div class="buttons">
+
+                                    <a class="btn btn-primary  btn-xs"
+                                       href="#/administration/users/form/{{item.id}}">
+                                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                                    </a>
+
+                                    <!--</button>-->
+                                    <button class="btn btn-danger  btn-xs" data-toggle="modal"
+                                            ng-click="usersList.deleteUser()">
+                                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td colspan="6" class="text-center">
+                                <div st-pagination="" st-items-by-page="usersList.smartTablePageSize"
+                                     st-displayed-pages="5"></div>
+                            </td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

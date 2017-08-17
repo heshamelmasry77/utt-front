@@ -1,0 +1,173 @@
+.performance-result {
+  .green {
+    background-color: #81c784;
+    margin: 0 10px 10px 0;
+
+  }
+  .light-green {
+    background-color: #c8e6c9;
+    margin: 0 10px 10px 0;
+    height: 230px;
+
+  }
+  .yellow {
+    background-color: #ffb300;
+    margin: 0 10px 10px 0;
+
+  }
+  .light-yellow {
+    background-color: #ffecb3;
+    margin: 0 10px 10px 0;
+    padding: 5px;
+    height: 70px;
+
+  }
+  .gray {
+    background-color: #666666;
+    margin: 0 10px 10px 0;
+  }
+  .light-gray {
+    background-color: #efefef;
+    margin: 0 10px 10px 0;
+    padding: 5px;
+    height: 70px;
+  }
+  .high-conv {
+    h2 {
+      text-align: center;
+      color: #ffffff;
+      padding: 5px 0 5px 0;
+      letter-spacing: .1rem;
+      line-height: normal;
+      margin: 0;
+    }
+    h3 {
+      text-align: center;
+      color: #ffffff;
+      padding: 10px 0 10px 0;
+      letter-spacing: .1rem;
+      line-height: normal;
+      margin: 0;
+      font-weight: 400;
+    }
+    .vehicle-bought-wrapper {
+      padding: 90px 0 0 0;
+      p {
+        font-size: 16px;
+        color: #a0a0a0;
+        margin: 2px 0 0 0;
+        font-weight: 300;
+      }
+      h1 {
+        color: #676767;
+        font-weight: 300;
+      }
+    }
+    .growth-cars-bought {
+      p {
+        color: #a0a0a0;
+        font-size: 11.3px;
+        margin: 2px 0 0 0;
+      }
+      h2 {
+        color: #676767;
+        font-weight: 300;
+        font-size: 22px;
+      }
+    }
+
+    .sales {
+      p {
+        color: #a0a0a0;
+        font-size: 11.3px;
+        font-weight: 300;
+        margin: 2px 0 0 0;
+      }
+      h2 {
+        color: #676767;
+        font-weight: 300;
+        font-size: 22px;
+      }
+      h1 {
+        margin: 0;
+        font-weight: 300;
+      }
+      .sales-left {
+        p {
+          font-size: 14px;
+          margin: 2px 0 0 0;
+        }
+      }
+      .sales-growth {
+        p, h2 {
+          color: #4d9950;
+        }
+      }
+    }
+  }
+  .panel {
+    .panel-body {
+      h2.performance-header {
+        margin: 25px 0 0 0;
+        text-align: center;
+      }
+    }
+  }
+  .acquisition-per-city {
+    .light-gray {
+      display: inline-block;
+      float: left;
+      width: 30.3%;
+      p {
+        font-size: 9px;
+        color: #a0a0a0;
+        margin-bottom: 0;
+      }
+      h2 {
+        color: #676767;
+        font-weight: 300;
+        font-size: 22px;
+      }
+    }
+  }
+
+  .conversion-funnel-container {
+    .gray {
+      margin-bottom: 0;
+    }
+    .conversion-funnel-wrapper {
+      .panel {
+        margin-right: 10px;
+        //box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.25);
+        box-shadow: none;
+        .panel-body {
+          padding: 0;
+
+          .amcharts-chart-div {
+            a {
+              display: none !important;
+            }
+          }
+          text {
+            //position: relative;
+            //right: 200px !important;
+
+            tspan {
+              font-size: 14px !important;
+              font-weight: 300;
+              font-family: "Roboto", sans-serif;
+
+            }
+          }
+          rect {
+            transform: translate(226, 474) !important;
+
+          }
+        }
+      }
+    }
+  }
+  .custom-filter-date {
+    margin-top: 5px;
+  }
+}

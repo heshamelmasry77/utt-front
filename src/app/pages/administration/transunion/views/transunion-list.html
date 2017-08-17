@@ -1,0 +1,80 @@
+<div class="horizontal-scroll">
+    <div class="form-group select-page-size-wrap" ng-init="TransunionList.init()">
+        <label>Rows on page
+            <select class="form-control selectpicker show-tick" title="Rows on page" selectpicker
+                    ng-model="TransunionList.smartTablePageSize" ng-options="i for i in [5,10,15,20,25]">
+            </select>
+        </label>
+    </div>
+
+    <table class="table" st-table="TransunionList.transunionListData">
+        <thead>
+        <tr class="sortable ">
+            <th st-sort="mmCode">MM Code</th>
+            <th st-sort="type">Type</th>
+            <th st-sort="make">Make</th>
+            <th st-sort="carzarMasterModel">Carzar Master Model</th>
+            <th st-sort="variant">Variant</th>
+            <th st-sort="year">Year</th>
+            <th st-sort="tradePrice">Trade Price</th>
+            <th st-sort="isEnabled">Enabled/Disabled</th>
+
+
+        </tr>
+        <tr>
+            <th><input st-search="mmCode" placeholder="Search MM Code" class="input-sm form-control search-input"
+                       type="search"/></th>
+            <th><input st-search="type" placeholder="Search Type" class="input-sm form-control search-input"
+                       type="search"/></th>
+            <th><input st-search="make" placeholder="Search Make" class="input-sm form-control search-input"
+                       type="search"/></th>
+            <th><input st-search="carzarMasterModel" placeholder="Search Carzar Master Model"
+                       class="input-sm form-control search-input"
+                       type="search"/></th>
+            <th><input st-search="variant" placeholder="Search Variant" class="input-sm form-control search-input"
+                       type="search"/>
+            </th>
+            <th><input st-search="year" placeholder="Search Year" class="input-sm form-control search-input"
+                       type="search"/>
+            </th>
+            <th><input st-search="tradePrice" placeholder="Search Trade Price"
+                       class="input-sm form-control search-input"
+                       type="search"/>
+            </th>
+            <th>
+                <select st-search="isEnabled" class="show-tick form-control dropdown_custom_list">
+                    <option value="">- select -</option>
+                    <option value=true>{{"Enabled"}}</option>
+                    <option value=false>{{"Disabled"}}</option>
+                </select>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in TransunionList.transunionListData">
+            <td>{{item.mmCode}}</td>
+            <td>{{item.type}}</td>
+            <td>{{item.make}}</td>
+            <td>
+                <span editable-text="item.carzarMasterModel" blur="cancel">{{item.carzarMasterModel}}</span>
+            </td>
+            <td>{{item.variant}}</td>
+            <td>{{item.year}}</td>
+            <td>{{item.tradePrice}}</td>
+            <td>
+                <ba-switcher switcher-style="primary" id="item.id" switcher-value="item.isEnabled"
+                             ng-click="TransunionList.editIsEnabled(item, $event)"></ba-switcher>
+            </td>
+
+
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="6" class="text-center">
+                <div st-pagination="" st-items-by-page="TransunionList.smartTablePageSize" st-displayed-pages="5"></div>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+</div>

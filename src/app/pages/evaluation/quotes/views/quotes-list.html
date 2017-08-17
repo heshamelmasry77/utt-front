@@ -1,0 +1,82 @@
+<div class="widgets">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div ba-panel ba-panel-title="User List"
+                 ba-panel-class="with-scroll"
+                 ng-init="quotes.init()">
+                <div class="add-row-editable-table">
+                    <a ui-sref="evaluation.quotes.create" class="btn btn-primary">Create Quote</a>
+                </div>
+                <div class="horizontal-scroll">
+                    <table class="table  table-hover" st-table="quotes.quotesDataList">
+                        <thead>
+                        <tr class="sortable ">
+                            <th class="table-id" st-sort="id" st-sort-default="true">#</th>
+                            <th st-sort="bookingDate">Booking Date</th>
+                            <th st-sort="make">Make</th>
+                            <th st-sort="model">Model</th>
+                            <th st-sort="email">Email</th>
+                            <th st-sort="tradePrice">Trade Price</th>
+                            <th st-sort="maxQuote">Max quote</th>
+                            <th></th>
+                        </tr>
+                        <tr class="editable-row">
+                            <th></th>
+                            <th><!--calendar filter here--></th>
+                            <th><input st-search="make" placeholder="Filter by make"
+                                       class="input-sm form-control search-input"
+                                       type="search"/></th>
+                            <th><input st-search="model" placeholder="Filter by model"
+                                       class="input-sm form-control search-input"
+                                       type="search"/></th>
+
+                            <th><input st-search="email" placeholder="Filter by Email"
+                                       class="input-sm form-control search-input"
+                                       type="search"/>
+                            </th>
+
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="item in quotes.quotesDataList">
+                            <td class="table-id">{{item.id}}</td>
+                            <td>{{item.bookingDate}}</td>
+                            <td>{{item.make}}</td>
+                            <td>{{item.model}}</td>
+                            <td>{{item.email}}</td>
+                            <td>{{item.tradePrice}}</td>
+                            <td>{{item.maxQuote}}</td>
+                            <td>
+                                <div class="buttons">
+                                    <a  href="#/evaluation/quotes/form/{{item.id}}" class="btn btn-info  btn-xs">View
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td colspan="6" class="text-center">
+                                <div st-pagination="" st-items-by-page="quotes.smartTablePageSize"
+                                     st-displayed-pages="5"></div>
+                            </td><td><div class="form-group select-page-size-wrap ">
+                            <label>Rows on page
+                                <select class="form-control selectpicker show-tick" title="Rows on page" selectpicker
+                                        ng-model="quotes.pageSize" ng-options="i for i in quotes.pageSizeList">
+                                </select>
+                            </label>
+                        </div></td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
