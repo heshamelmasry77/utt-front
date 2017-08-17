@@ -21,9 +21,7 @@
             'BlurAdmin.pages.profile',
             'BlurAdmin.pages.administration',
             'BlurAdmin.pages.evaluation',
-            'BlurAdmin.pages.booking',
-            'BlurAdmin.pages.pricingroom'
-
+            'BlurAdmin.pages.booking'
     ])
         .config(routeConfig).config(amChartConfig);
 

@@ -1,1 +1,11 @@
-# Created by .ignore support plugin (hsz.mobi)
+node_modules/
+bower_components/
+coverage/
+.sass-cache/
+.idea/
+.tmp/
+dist/
+src/dist/
+src/robots.txt
+src/app/config/config.js
+

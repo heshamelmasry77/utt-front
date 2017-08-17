@@ -4,7 +4,6 @@ angular
     return {
       pricingApiDomain: 'http://localhost:3002',
       bookingApiDomain: 'http://localhost:3001',
-      opsApiDomain: 'https://ms-ops-api.herokuapp.com',
       isDebug: true,
       showExamples: true,
       $get: function () {

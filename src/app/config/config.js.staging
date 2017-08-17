@@ -4,7 +4,6 @@ angular
     return {
       pricingApiDomain: 'https://cz4-pricing.herokuapp.com',
       bookingApiDomain: 'https://cz4-booking.herokuapp.com',
-      opsApiDomain: 'https://ms-ops-api.herokuapp.com',
       isDebug: true,
       showExamples: false,
       $get: function () {
