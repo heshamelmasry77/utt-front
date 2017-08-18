@@ -4,8 +4,7 @@ coverage/
 .sass-cache/
 .idea/workspace.xml
 .tmp/
-.tmp/serve
-.tmp/serve/*
+.tmp/serve/
 
 dist/
 package-lock.json
