@@ -14,13 +14,8 @@
             .state('dashboard', {
                 url: '/dashboard',
                 templateUrl: 'app/pages/dashboard/views/dashboard.html',
-                title: 'Dashboard',
                 controller: 'DashboardController',
-                controllerAs: 'dashboard',
-                sidebarMeta: {
-                    icon: 'ion-android-home',
-                    order: 0
-                }
+                controllerAs: 'dashboard'
             });
     }
 

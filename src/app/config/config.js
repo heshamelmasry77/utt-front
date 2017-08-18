@@ -1,5 +1,5 @@
 angular
-  .module('CarZarConfig', [])
+  .module('UttConfig', [])
   .provider('Config', function () {
     return {
       pricingApiDomain: 'https://cz4-pricing.herokuapp.com',
