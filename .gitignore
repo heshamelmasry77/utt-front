@@ -2,9 +2,11 @@ node_modules/
 bower_components/
 coverage/
 .sass-cache/
-.idea/
+.idea/workspace.xml
 .tmp/
 dist/
+package-lock.json
+
 src/dist/
 src/robots.txt
 src/app/config/config.js
