@@ -3,13 +3,13 @@ bower_components/
 coverage/
 .sass-cache/
 .idea/workspace.xml
+.tmp/serve/
 .idea/
 .tmp/
-.tmp/serve/
-
 dist/
-package-lock.json
 
+package-lock.json
+src/.tmp/
 src/dist/
 src/robots.txt
 src/app/config/config.js
