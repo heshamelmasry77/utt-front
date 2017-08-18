@@ -9,21 +9,11 @@
 
     angular.module('BlurAdmin.pages', [
             'ui.router',
-'CarZarConfig',
+'UttConfig',
             'BlurAdmin.pages.dashboard',
-            'BlurAdmin.pages.dashboardOld',
             'BlurAdmin.pages.ui',
-            'BlurAdmin.pages.components',
-            'BlurAdmin.pages.form',
-            'BlurAdmin.pages.tables',
-            'BlurAdmin.pages.charts',
-            'BlurAdmin.pages.maps',
-            'BlurAdmin.pages.profile',
-            'BlurAdmin.pages.administration',
-            'BlurAdmin.pages.evaluation',
-            'BlurAdmin.pages.booking'
     ])
-        .config(routeConfig).config(amChartConfig);
+        .config(routeConfig);
 
     /** @ngInject */
     function routeConfig($urlRouterProvider, baSidebarServiceProvider, ConfigProvider) {

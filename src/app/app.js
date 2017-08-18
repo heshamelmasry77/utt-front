@@ -18,7 +18,7 @@ angular.module('BlurAdmin', [
     'rgkevin.datetimeRangePicker',
     'BlurAdmin.theme',
     'BlurAdmin.pages',
-    'CarZarConfig'
+    'UttConfig'
 ])
     .constant('moment', moment)
     .config(function ($provide) {
