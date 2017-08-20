@@ -22,8 +22,11 @@
             vm.$auth = $auth;
             vm.$state = $state;
         }
+
         function init() {
         }
+
+
         function register() {
             console.log(vm.user);
             vm.$auth.signup(vm.user).then(function (token) {
@@ -31,6 +34,7 @@
                 console.log(vm.user);
             });
         }
+
         function login() {
             console.log(vm.login.user);
             vm.$auth.login(this.login.user).then(function (result) {
@@ -43,6 +47,7 @@
                 // console.log(vm.userEmail);
             });
         }
+
     }
 })();
 
