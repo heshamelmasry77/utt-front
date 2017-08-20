@@ -6,7 +6,7 @@
 (function () {
   'use strict';
 
-  angular.module('Utt.theme')
+  angular.module('BlurAdmin.theme')
       .filter('appImage', appImage);
 
   /** @ngInject */

@@ -6,6 +6,6 @@
 (function () {
   'use strict';
 
-  angular.module('Utt.theme.inputs', []);
+  angular.module('BlurAdmin.theme.inputs', []);
 
 })();

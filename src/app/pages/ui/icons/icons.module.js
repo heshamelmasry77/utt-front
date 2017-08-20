@@ -6,7 +6,7 @@
 (function () {
   'use strict';
 
-  angular.module('Utt.pages.ui.icons', [])
+  angular.module('BlurAdmin.pages.ui.icons', [])
       .config(routeConfig);
 
   /** @ngInject */

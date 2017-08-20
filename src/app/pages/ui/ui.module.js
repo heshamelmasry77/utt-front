@@ -6,18 +6,18 @@
 (function () {
   'use strict';
 
-  angular.module('Utt.pages.ui', [
-    'Utt.pages.ui.typography',
-    'Utt.pages.ui.buttons',
-    'Utt.pages.ui.icons',
-    'Utt.pages.ui.modals',
-    'Utt.pages.ui.grid',
-    'Utt.pages.ui.alerts',
-    'Utt.pages.ui.progressBars',
-    'Utt.pages.ui.notifications',
-    'Utt.pages.ui.tabs',
-    'Utt.pages.ui.slider',
-    'Utt.pages.ui.panels'
+  angular.module('BlurAdmin.pages.ui', [
+    'BlurAdmin.pages.ui.typography',
+    'BlurAdmin.pages.ui.buttons',
+    'BlurAdmin.pages.ui.icons',
+    'BlurAdmin.pages.ui.modals',
+    'BlurAdmin.pages.ui.grid',
+    'BlurAdmin.pages.ui.alerts',
+    'BlurAdmin.pages.ui.progressBars',
+    'BlurAdmin.pages.ui.notifications',
+    'BlurAdmin.pages.ui.tabs',
+    'BlurAdmin.pages.ui.slider',
+    'BlurAdmin.pages.ui.panels',
   ])
       .config(routeConfig);
 

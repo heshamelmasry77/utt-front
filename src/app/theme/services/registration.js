@@ -7,7 +7,7 @@
 (function() {
     'use strict';
 
-    angular.module('Utt.theme')
+    angular.module('BlurAdmin.theme')
         .factory('registration', registration);
 
     /** @ngInject */

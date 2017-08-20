@@ -9,7 +9,7 @@
   /**
    * Includes basic panel layout inside of current element.
    */
-  angular.module('Utt.theme')
+  angular.module('BlurAdmin.theme')
       .directive('baPanel', baPanel);
 
   /** @ngInject */

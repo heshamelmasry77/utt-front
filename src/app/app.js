@@ -2,7 +2,7 @@
 
 'use strict';
 
-angular.module('Utt', [
+angular.module('BlurAdmin', [
     'ngAnimate',
     'ui.bootstrap',
     'ui.sortable',
@@ -16,8 +16,8 @@ angular.module('Utt', [
     'angular-progress-button-styles',
     'daterangepicker',
     'rgkevin.datetimeRangePicker',
-    'Utt.theme',
-    'Utt.pages',
+    'BlurAdmin.theme',
+    'BlurAdmin.pages',
     'UttConfig'
 ])
     .constant('moment', moment)
