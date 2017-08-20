@@ -10,8 +10,9 @@
     angular.module('BlurAdmin.pages', [
             'ui.router',
 'UttConfig',
-            'BlurAdmin.pages.dashboard',
             'BlurAdmin.pages.ui',
+            'BlurAdmin.pages.home',
+            'BlurAdmin.pages.auth'
     ])
         .config(routeConfig);
 

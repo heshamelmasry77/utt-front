@@ -6,11 +6,11 @@
 (function () {
     'use strict';
 
-    angular.module('BlurAdmin.pages.dashboard')
-        .controller('DashboardController', DashboardController);
+    angular.module('BlurAdmin.pages.home')
+        .controller('HomeController', HomeController);
 
     /** @ngInject */
-    function DashboardController() {
+    function HomeController() {
 
         var vm = this;
         vm.init = init;
