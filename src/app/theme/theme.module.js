@@ -6,14 +6,14 @@
 (function () {
   'use strict';
 
-  angular.module('Utt.theme', [
+  angular.module('BlurAdmin.theme', [
       'toastr',
       'chart.js',
       'angular-chartist',
       'angular.morris-chart',
       'textAngular',
-      'Utt.theme.components',
-      'Utt.theme.inputs'
+      'BlurAdmin.theme.components',
+      'BlurAdmin.theme.inputs'
   ]);
 
 })();

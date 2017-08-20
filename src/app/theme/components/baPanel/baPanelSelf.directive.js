@@ -9,7 +9,7 @@
   /**
    * Represents current element as panel, adding all necessary classes.
    */
-  angular.module('Utt.theme')
+  angular.module('BlurAdmin.theme')
       .directive('baPanelSelf', baPanelSelf);
 
   /** @ngInject */
