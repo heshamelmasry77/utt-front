@@ -9,7 +9,7 @@
 
     angular.module('Utt.pages', [
             'ui.router',
-        'UttConfig',
+            'UttConfig',
             'Utt.pages.home',
             'Utt.pages.auth',
             'Utt.pages.ui'
