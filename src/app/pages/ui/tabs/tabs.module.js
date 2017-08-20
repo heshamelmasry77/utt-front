@@ -6,7 +6,7 @@
 (function () {
   'use strict';
 
-  angular.module('Utt.pages.ui.tabs', [])
+  angular.module('BlurAdmin.pages.ui.tabs', [])
       .config(routeConfig);
 
   /** @ngInject */

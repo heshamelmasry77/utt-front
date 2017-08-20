@@ -7,12 +7,17 @@
 (function() {
     'use strict';
 
-    angular.module('Utt.pages', [
+    angular.module('BlurAdmin.pages', [
             'ui.router',
 'UttConfig',
+<<<<<<< HEAD
             'Utt.pages.home',
             'Utt.pages.auth',
             'Utt.pages.ui'
+=======
+            'BlurAdmin.pages.dashboard',
+            'BlurAdmin.pages.ui',
+>>>>>>> parent of 6e99e15... Changing naming to Utt
     ])
         .config(routeConfig);
 
