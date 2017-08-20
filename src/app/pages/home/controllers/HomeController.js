@@ -6,8 +6,13 @@
 (function () {
     'use strict';
 
-    angular.module('BlurAdmin.pages.home')
+<<<<<<< HEAD:src/app/pages/home/controllers/HomeController.js
+    angular.module('Utt.pages.home')
         .controller('HomeController', HomeController);
+=======
+    angular.module('BlurAdmin.pages.dashboard')
+        .controller('DashboardController', DashboardController);
+>>>>>>> parent of 6e99e15... Changing naming to Utt:src/app/pages/dashboard/controllers/DashboardController.js
 
     /** @ngInject */
     function HomeController() {
