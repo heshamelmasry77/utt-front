@@ -6,7 +6,7 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.ui.buttons', [])
+  angular.module('Utt.pages.ui.buttons', [])
       .config(routeConfig);
 
   /** @ngInject */

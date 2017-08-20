@@ -6,7 +6,7 @@
 (function () {
     'use strict';
 
-    angular.module('BlurAdmin.pages.dashboard')
+    angular.module('Utt.pages.dashboard')
         .controller('DashboardController', DashboardController);
 
     /** @ngInject */

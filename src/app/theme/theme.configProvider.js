@@ -31,7 +31,7 @@
     white: '#10c4b5',
   };
 
-  angular.module('BlurAdmin.theme')
+  angular.module('Utt.theme')
     .provider('baConfig', configProvider);
 
   /** @ngInject */

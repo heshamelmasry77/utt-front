@@ -7,11 +7,11 @@
 (function() {
     'use strict';
 
-    angular.module('BlurAdmin.pages', [
+    angular.module('Utt.pages', [
             'ui.router',
 'UttConfig',
-            'BlurAdmin.pages.dashboard',
-            'BlurAdmin.pages.ui',
+            'Utt.pages.dashboard',
+            'Utt.pages.ui',
     ])
         .config(routeConfig);
 
