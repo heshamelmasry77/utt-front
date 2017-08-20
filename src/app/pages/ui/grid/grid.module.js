@@ -6,7 +6,7 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.ui.grid', [])
+  angular.module('Utt.pages.ui.grid', [])
       .config(routeConfig);
 
   /** @ngInject */

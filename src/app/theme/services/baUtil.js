@@ -6,7 +6,7 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.theme')
+  angular.module('Utt.theme')
       .service('baUtil', baUtil);
 
   /** @ngInject */
