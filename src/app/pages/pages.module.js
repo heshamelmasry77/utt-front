@@ -10,14 +10,15 @@
     angular.module('BlurAdmin.pages', [
             'ui.router',
 'UttConfig',
-            'BlurAdmin.pages.dashboard',
+            'BlurAdmin.pages.auth',
+            'BlurAdmin.pages.home',
             'BlurAdmin.pages.ui',
     ])
         .config(routeConfig);
 
     /** @ngInject */
     function routeConfig($urlRouterProvider, baSidebarServiceProvider, ConfigProvider) {
-        $urlRouterProvider.otherwise('/dashboard');
+        $urlRouterProvider.otherwise('/');
 
         if(ConfigProvider.showExamples){
         baSidebarServiceProvider.addStaticItem({
