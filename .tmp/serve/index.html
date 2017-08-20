@@ -5,11 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Carzar Admin</title>
+    <title>Utt</title>
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
 
-    <link href="//cdn.rawgit.com/indrimuska/angular-moment-picker/master/dist/angular-moment-picker.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
@@ -36,7 +35,6 @@
     <link rel="stylesheet" href="../bower_components/jstree/dist/themes/default/style.css" />
     <link rel="stylesheet" href="../bower_components/angular-ui-select/dist/select.css" />
     <link rel="stylesheet" href="../bower_components/bootstrap-daterangepicker/daterangepicker.css" />
-    <link rel="stylesheet" href="../bower_components/angular-moment-picker/dist/angular-moment-picker.min.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -48,23 +46,22 @@
 </head>
 
 <body>
-    <div class="body-bg"></div>
-    <main ng-if="$pageFinishedLoading" ng-class="{ 'menu-collapsed': $baSidebarService.isMenuCollapsed() }">
+    <!--<div class="body-bg"></div>-->
+    <main>
 
-        <ba-sidebar></ba-sidebar>
+        <!--<ba-sidebar></ba-sidebar>-->
         <page-top></page-top>
 
         <div class="al-main">
             <div class="al-content">
-                <content-top></content-top>
                 <div ui-view autoscroll="true" autoscroll-body-top></div>
             </div>
         </div>
 
         <footer class="al-footer clearfix">
-            <div class="al-footer-right">Created with <i class="ion-heart"></i></div>
+            <div class="al-footer-right">Created with <i class="ion-heart"></i>by Three Donuts</div>
             <div class="al-footer-main clearfix">
-                <div class="al-copy">Carzar Admin 2017</div>
+                <div class="al-copy">Utt 2017</div>
 
             </div>
         </footer>
@@ -72,9 +69,9 @@
         <back-top></back-top>
     </main>
 
-    <div id="preloader" ng-show="!$pageFinishedLoading">
-        <div></div>
-    </div>
+    <!--<div id="preloader" ng-show="!$pageFinishedLoading">-->
+        <!--<div></div>-->
+    <!--</div>-->
 
     <!-- build:js(src) scripts/vendor.js -->
     <!-- bower:js -->
@@ -138,44 +135,18 @@
     <script src="../bower_components/datetimeRangePicker/range-picker.js"></script>
     <script src="../bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
     <script src="../bower_components/angular-daterangepicker/js/angular-daterangepicker.js"></script>
-    <script src="../bower_components/angular-moment-picker/dist/angular-moment-picker.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
     <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
     <!-- inject:js -->
     <script src="app/pages/pages.module.js"></script>
     <script src="app/theme/theme.module.js"></script>
-    <script src="app/pages/administration/administration.module.js"></script>
-    <script src="app/pages/booking/booking.module.js"></script>
-    <script src="app/pages/charts/charts.module.js"></script>
-    <script src="app/pages/components/components.module.js"></script>
-    <script src="app/pages/dashboard/dashboard.module.js"></script>
-    <script src="app/pages/dashboardOld/dashboardOld.module.js"></script>
-    <script src="app/pages/evaluation/evaluation.module.js"></script>
-    <script src="app/pages/form/form.module.js"></script>
-    <script src="app/pages/maps/maps.module.js"></script>
-    <script src="app/pages/pricingroom/pricingroom.module.js"></script>
-    <script src="app/pages/profile/profile.module.js"></script>
-    <script src="app/pages/tables/tables.module.js"></script>
+    <script src="app/pages/auth/auth.module.js"></script>
+    <script src="app/pages/home/home.module.js"></script>
     <script src="app/pages/ui/ui.module.js"></script>
     <script src="app/theme/components/components.module.js"></script>
     <script src="app/theme/inputs/inputs.module.js"></script>
-    <script src="app/pages/administration/transunion/transunion.module.js"></script>
-    <script src="app/pages/administration/users/users.module.js"></script>
-    <script src="app/pages/booking/bookings/bookings.module.js"></script>
-    <script src="app/pages/booking/inspections/inspections.module.js"></script>
-    <script src="app/pages/booking/locations/locations.module.js"></script>
-    <script src="app/pages/charts/amCharts/amCharts.module.js"></script>
-    <script src="app/pages/charts/chartJs/chartJs.module.js"></script>
-    <script src="app/pages/charts/chartist/chartist.module.js"></script>
-    <script src="app/pages/charts/morris/morris.module.js"></script>
-    <script src="app/pages/components/mail/mail.module.js"></script>
-    <script src="app/pages/components/timeline/timeline.module.js"></script>
-    <script src="app/pages/components/tree/tree.module.js"></script>
-    <script src="app/pages/evaluation/pricing/pricing.module.js"></script>
-    <script src="app/pages/evaluation/quotes/quotes.module.js"></script>
     <script src="app/pages/ui/alerts/alerts.module.js"></script>
     <script src="app/pages/ui/buttons/buttons.module.js"></script>
     <script src="app/pages/ui/grid/grid.module.js"></script>
@@ -194,9 +165,6 @@
     <script src="app/theme/theme.constants.js"></script>
     <script src="app/theme/theme.run.js"></script>
     <script src="app/theme/theme.service.js"></script>
-    <script src="app/pages/profile/ProfileModalCtrl.js"></script>
-    <script src="app/pages/profile/ProfilePageCtrl.js"></script>
-    <script src="app/pages/tables/TablesPageCtrl.js"></script>
     <script src="app/theme/components/toastrLibConfig.js"></script>
     <script src="app/theme/directives/animatedChange.js"></script>
     <script src="app/theme/directives/autoExpand.js"></script>
@@ -213,44 +181,8 @@
     <script src="app/theme/services/preloader.js"></script>
     <script src="app/theme/services/registration.js"></script>
     <script src="app/theme/services/stopableInterval.js"></script>
-    <script src="app/pages/charts/chartJs/chartJs1DCtrl.js"></script>
-    <script src="app/pages/charts/chartJs/chartJs2DCtrl.js"></script>
-    <script src="app/pages/charts/chartJs/chartJsWaveCtrl.js"></script>
-    <script src="app/pages/charts/chartist/chartistCtrl.js"></script>
-    <script src="app/pages/charts/morris/morrisCtrl.js"></script>
-    <script src="app/pages/components/mail/MailTabCtrl.js"></script>
-    <script src="app/pages/components/mail/mailMessages.js"></script>
-    <script src="app/pages/components/timeline/TimelineCtrl.js"></script>
-    <script src="app/pages/components/tree/treeCtrl.js"></script>
-    <script src="app/pages/dashboard/controllers/DashboardController.js"></script>
-    <script src="app/pages/dashboard/controllers/FunnelChartController.js"></script>
-    <script src="app/pages/dashboard/services/DashboardApiService.js"></script>
-    <script src="app/pages/dashboardOld/blurFeed/BlurFeedCtrl.js"></script>
-    <script src="app/pages/dashboardOld/blurFeed/blurFeed.directive.js"></script>
-    <script src="app/pages/dashboardOld/calendar/dashboardCalendar.js"></script>
-    <script src="app/pages/dashboardOld/dashboardCalendar/DashboardCalendarCtrl.js"></script>
-    <script src="app/pages/dashboardOld/dashboardCalendar/dashboardCalendar.directive.js"></script>
-    <script src="app/pages/dashboardOld/dashboardLineChart/DashboardLineChartCtrl.js"></script>
-    <script src="app/pages/dashboardOld/dashboardLineChart/dashboardLineChart.directive.js"></script>
-    <script src="app/pages/dashboardOld/dashboardMap/DashboardMapCtrl.js"></script>
-    <script src="app/pages/dashboardOld/dashboardMap/dashboardMap.directive.js"></script>
-    <script src="app/pages/dashboardOld/dashboardPieChart/DashboardPieChartCtrl.js"></script>
-    <script src="app/pages/dashboardOld/dashboardPieChart/dashboardPieChart.directive.js"></script>
-    <script src="app/pages/dashboardOld/dashboardTodo/DashboardTodoCtrl.js"></script>
-    <script src="app/pages/dashboardOld/dashboardTodo/dashboardTodo.directive.js"></script>
-    <script src="app/pages/dashboardOld/pieCharts/dashboardPieChart.js"></script>
-    <script src="app/pages/dashboardOld/popularApp/popularApp.directive.js"></script>
-    <script src="app/pages/dashboardOld/trafficChart/TrafficChartCtrl.js"></script>
-    <script src="app/pages/dashboardOld/trafficChart/trafficChart.directive.js"></script>
-    <script src="app/pages/dashboardOld/weather/WeatherCtrl.js"></script>
-    <script src="app/pages/dashboardOld/weather/weather.directive.js"></script>
-    <script src="app/pages/form/wizard/wizrdCtrl.js"></script>
-    <script src="app/pages/maps/google-maps/GmapPageCtrl.js"></script>
-    <script src="app/pages/maps/leaflet/LeafletPageCtrl.js"></script>
-    <script src="app/pages/maps/map-bubbles/MapBubblePageCtrl.js"></script>
-    <script src="app/pages/maps/map-lines/MapLinesPageCtrl.js"></script>
-    <script src="app/pages/pricingroom/controllers/PricingroomController.js"></script>
-    <script src="app/pages/pricingroom/services/DashboardApiService.js"></script>
+    <script src="app/pages/auth/controllers/AuthController.js"></script>
+    <script src="app/pages/home/controllers/HomeController.js"></script>
     <script src="app/pages/ui/buttons/ButtonPageCtrl.js"></script>
     <script src="app/pages/ui/icons/IconsPageCtrl.js"></script>
     <script src="app/pages/ui/modals/ModalsPageCtrl.js"></script>
@@ -279,49 +211,9 @@
     <script src="app/theme/filters/image/profilePicture.js"></script>
     <script src="app/theme/filters/text/removeHtml.js"></script>
     <script src="app/theme/inputs/baSwitcher/baSwitcher.js"></script>
-    <script src="app/pages/administration/transunion/controllers/TransunionHistoryController.js"></script>
-    <script src="app/pages/administration/transunion/controllers/TransunionImportController.js"></script>
-    <script src="app/pages/administration/transunion/controllers/TransunionListController.js"></script>
-    <script src="app/pages/administration/users/controllers/RolesController.js"></script>
-    <script src="app/pages/administration/users/controllers/UsersFormController.js"></script>
-    <script src="app/pages/administration/users/controllers/UsersListController.js"></script>
-    <script src="app/pages/booking/bookings/controllers/BookingDetailsController.js"></script>
-    <script src="app/pages/booking/bookings/controllers/BookingsFormController.js"></script>
-    <script src="app/pages/booking/bookings/controllers/BookingsListController.js"></script>
-    <script src="app/pages/booking/inspections/controllers/InspectionsController.js"></script>
-    <script src="app/pages/booking/locations/controllers/BlockLocationsController.js"></script>
-    <script src="app/pages/booking/locations/controllers/CbcsListController.js"></script>
-    <script src="app/pages/booking/locations/controllers/LocationsDetailsController.js"></script>
-    <script src="app/pages/booking/locations/controllers/LocationsFormController.js"></script>
-    <script src="app/pages/booking/locations/controllers/LocationsListController.js"></script>
-    <script src="app/pages/charts/amCharts/areaChart/AreaChartCtrl.js"></script>
-    <script src="app/pages/charts/amCharts/barChart/BarChartCtrl.js"></script>
-    <script src="app/pages/charts/amCharts/combinedChart/combinedChartCtrl.js"></script>
-    <script src="app/pages/charts/amCharts/funnelChart/FunnelChartCtrl.js"></script>
-    <script src="app/pages/charts/amCharts/ganttChart/ganttChartCtrl.js"></script>
-    <script src="app/pages/charts/amCharts/lineChart/LineChartCtrl.js"></script>
-    <script src="app/pages/charts/amCharts/pieChart/PieChartCtrl.js"></script>
-    <script src="app/pages/components/mail/composeBox/composeBoxCtrl.js"></script>
-    <script src="app/pages/components/mail/composeBox/composeModal.js"></script>
-    <script src="app/pages/components/mail/detail/MailDetailCtrl.js"></script>
-    <script src="app/pages/components/mail/list/MailListCtrl.js"></script>
-    <script src="app/pages/evaluation/pricing/controllers/InspectionController.js"></script>
-    <script src="app/pages/evaluation/pricing/controllers/PricingController.js"></script>
-    <script src="app/pages/evaluation/pricing/services/InspectionApiService.js"></script>
-    <script src="app/pages/evaluation/quotes/controllers/QuotesController.js"></script>
     <script src="app/pages/ui/modals/notifications/NotificationsCtrl.js"></script>
     <script src="app/pages/ui/modals/progressModal/ProgressModalCtrl.js"></script>
     <script src="app/theme/components/backTop/lib/jquery.backTop.min.js"></script>
-    <script src="app/pages/form/inputs/widgets/datePickers/datepickerCtrl.js"></script>
-    <script src="app/pages/form/inputs/widgets/datePickers/datepickerpopupCtrl.js"></script>
-    <script src="app/pages/form/inputs/widgets/oldSelect/OldSelectpickerPanelCtrl.js"></script>
-    <script src="app/pages/form/inputs/widgets/oldSelect/selectpicker.directive.js"></script>
-    <script src="app/pages/form/inputs/widgets/oldSwitches/OldSwitchPanelCtrl.js"></script>
-    <script src="app/pages/form/inputs/widgets/oldSwitches/switch.directive.js"></script>
-    <script src="app/pages/form/inputs/widgets/select/GroupSelectpickerOptions.js"></script>
-    <script src="app/pages/form/inputs/widgets/select/SelectpickerPanelCtrl.js"></script>
-    <script src="app/pages/form/inputs/widgets/switches/SwitchDemoPanelCtrl.js"></script>
-    <script src="app/pages/form/inputs/widgets/tagsInput/tagsInput.directive.js"></script>
     <!-- endinject -->
 
     <!-- inject:partials -->
