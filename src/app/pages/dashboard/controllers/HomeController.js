@@ -6,11 +6,11 @@
 (function () {
     'use strict';
 
-    angular.module('Utt.pages.dashboard')
-        .controller('DashboardController', DashboardController);
+    angular.module('Utt.pages.home')
+        .controller('HomeController', HomeController);
 
     /** @ngInject */
-    function DashboardController() {
+    function HomeController() {
 
         var vm = this;
         vm.init = init;
