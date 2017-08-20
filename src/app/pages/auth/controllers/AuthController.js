@@ -6,7 +6,7 @@
 (function () {
     'use strict';
 
-    angular.module('Utt.pages.auth')
+    angular.module('BlurAdmin.pages.auth')
         .controller('AuthController', AuthController);
 
     /** @ngInject */

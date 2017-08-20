@@ -5,7 +5,7 @@
 (function () {
     'use strict';
 
-    angular.module('Utt.pages.home', [])
+    angular.module('BlurAdmin.pages.home', [])
         .config(routeConfig);
 
     /** @ngInject */
