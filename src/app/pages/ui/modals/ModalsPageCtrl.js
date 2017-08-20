@@ -6,7 +6,7 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.ui.notifications')
+  angular.module('Utt.pages.ui.notifications')
     .controller('ModalsPageCtrl', ModalsPageCtrl);
 
   /** @ngInject */

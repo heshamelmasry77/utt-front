@@ -6,7 +6,7 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.ui.typography', [])
+  angular.module('Utt.pages.ui.typography', [])
       .config(routeConfig);
 
   /** @ngInject */
