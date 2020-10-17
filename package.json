@@ -7,7 +7,7 @@
     "heroku-postbuild": ""
   },
   "dependencies": {
-    "browser-sync": "~2.18.2",
+    "browser-sync": "~2.25.0",
     "browser-sync-spa": "~1.0.3",
     "chalk": "~1.1.1",
     "del": "~2.2.2",
